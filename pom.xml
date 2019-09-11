@@ -1,0 +1,73 @@
+<!--
+  ~ Copyright (C), 2002-2017, 苏宁易购电子商务有限公司
+  ~ FileName: pom.xml
+  ~ Author:   17081794
+  ~ Date:     19-9-10 下午2:38
+  ~ Description: webapp12
+  ~ History: //修改记录
+  ~ <author>      <time>      <version>    <desc>
+  ~ 17081794     19-9-10 下午2:38      版本号        描述
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>yhx.learning</groupId>
+  <artifactId>webapp12</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>webapp12 Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.1.0</version>
+      <scope>provided</scope>
+    </dependency>
+
+  </dependencies>
+  <build>
+    <finalName>webapp12</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.eclipse.jetty</groupId>
+        <artifactId>jetty-maven-plugin</artifactId>
+        <!-- Require JDK 1.7+ -->
+        <version>9.2.23.v20171218</version>
+        <!-- Require JDK 1.8+ -->
+        <!--<version>9.4.9.v20180320</version>-->
+        <configuration>
+          <jettyConfig>${project.basedir}/src/main/resources/jetty-web.xml</jettyConfig>
+          <httpConnector>
+            <port>8080</port>
+          </httpConnector>
+          <webApp>
+            <!-- 修复jetty使用NIO Connector memory-mapped files 导致在windows下静态资源被锁定的问题 -->
+            <!-- http://www.eclipse.org/jetty/documentation/current/troubleshooting-locked-files-on-windows.html -->
+            <contextPath>/webapp12</contextPath>
+          </webApp>
+          <!--<war>${project.build.directory}/.war</war>-->
+          <systemProperties>
+            <force>true</force>
+            <systemProperty>
+              <!-- 设置user.dir, 将RSF产生的临时文件归入到maven的编译目录中, 详情参考SCMConstant.java属性FILE_PATH-->
+              <name>user.home</name>
+              <value>${project.build.directory}</value>
+            </systemProperty>
+          </systemProperties>
+          <scanIntervalSeconds>3</scanIntervalSeconds>
+        </configuration>
+        <dependencies>
+        </dependencies>
+      </plugin>
+    </plugins>
+  </build>
+</project>
