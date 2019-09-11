@@ -16,11 +16,37 @@
          version="3.1">
     <servlet>
         <servlet-name>test</servlet-name>
+        <servlet-class>servelt.CommonServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>testAsync</servlet-name>
         <servlet-class>servelt.AsyncServlet</servlet-class>
+        <async-supported>true</async-supported>
     </servlet>
     
     <servlet-mapping>
-        <url-pattern>/test/request</url-pattern>
         <servlet-name>test</servlet-name>
+        <url-pattern>/test/request</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>testAsync</servlet-name>
+        <url-pattern>/test/async-request</url-pattern>
+    </servlet-mapping>
+    
+    <filter>
+        <filter-name>commonFilter</filter-name>
+        <filter-class>filter.CommonFilter</filter-class>
+        <async-supported>true</async-supported>
+    </filter>
+    <filter-mapping>
+        <filter-name>commonFilter</filter-name>
+        <servlet-name>test</servlet-name>
+    </filter-mapping>
+    
+    <filter-mapping>
+        <filter-name>commonFilter</filter-name>
+        <servlet-name>testAsync</servlet-name>
+    </filter-mapping>
+
 </web-app>
