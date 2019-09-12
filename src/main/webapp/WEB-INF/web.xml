@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  ~ Copyright (C), 2002-2017, 苏宁易购电子商务有限公司
-  ~ FileName: web.xml
-  ~ Author:   17081794
-  ~ Date:     19-9-10 下午2:55
-  ~ Description: webapp12
-  ~ History: //修改记录
-  ~ <author>      <time>      <version>    <desc>
-  ~ 17081794     19-9-10 下午2:52      版本号        描述
-  -->
+
 
 <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

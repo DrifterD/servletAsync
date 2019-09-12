@@ -1,12 +1,10 @@
 /*
- * Copyright (C), 2002-2017, 苏宁易购电子商务有限公司
+ * Copyright (c) 2004- 2019 All Rights Reserved.
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
  * FileName: AsyncServlet.java
- * Author:   17081794
+ * Author:   bigmoon
  * Date:     19-9-11 下午2:58
  * Description: servletAsync
- * History: //修改记录
- * <author>      <time>      <version>    <desc>
- * 17081794     19-9-11 下午2:58      版本号        描述
  */
 
 package servelt;
@@ -27,7 +25,7 @@ import java.io.IOException;
  *  xml： <async-supported>true</async-supported>
  *  annotation：asyncSupported
  *
- * @author 17081794
+ * @author bigmoon
  * @see [相关类/方法]（可选）
  * @since 0905
  */

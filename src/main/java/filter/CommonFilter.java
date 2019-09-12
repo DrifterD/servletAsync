@@ -1,7 +1,8 @@
 /*
- * Copyright (C), 2002-2017, 苏宁易购电子商务有限公司
+ * Copyright (c) 2004- 2019 All Rights Reserved.
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
  * FileName: CommonFilter.java
- * Author:   17081794
+ * Author:   bigmoon
  * Date:     19-9-11 下午4:55
  * Description: servletAsync
  * History: //修改记录
@@ -18,7 +19,7 @@ import java.io.IOException;
  * 〈一句话功能简述〉<br>
  * 〈功能详细描述〉
  *
- * @author 17081794
+ * @author bigmoon
  * @see [相关类/方法]（可选）
  * @since 0905
  */

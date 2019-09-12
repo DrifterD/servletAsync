@@ -1,13 +1,4 @@
-<!--
-  ~ Copyright (C), 2002-2017, 苏宁易购电子商务有限公司
-  ~ FileName: pom.xml
-  ~ Author:   17081794
-  ~ Date:     19-9-10 下午2:38
-  ~ Description: webapp12
-  ~ History: //修改记录
-  ~ <author>      <time>      <version>    <desc>
-  ~ 17081794     19-9-10 下午2:38      版本号        描述
-  -->
+
 
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">

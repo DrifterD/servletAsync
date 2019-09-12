@@ -1,12 +1,9 @@
 /*
- * Copyright (C), 2002-2017, 苏宁易购电子商务有限公司
- * FileName: AsyncServlet.java
- * Author:   17081794
- * Date:     19-9-10 下午2:59
+ * Copyright (c) 2004- 2019 All Rights Reserved.
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * FileName: CommonServelt.java
+ * Author:   bigmoon
  * Description: webapp12
- * History: //修改记录
- * <author>      <time>      <version>    <desc>
- * 17081794     19-9-10 下午2:59      版本号        描述
  */
 
 package servelt;
@@ -19,7 +16,7 @@ import java.io.IOException;
 
 /**
  * 3.0之前的一个常规servlet 服务
- * @author 17081794
+ * @author bigmoon
  * @see [相关类/方法]（可选）
  * @since 0905
  */
